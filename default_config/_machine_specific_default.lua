@@ -1,8 +1,8 @@
 -- please read through this file and change what you need to change
 
-vim.g.snips_author = 'David Chen'
+vim.g.snips_author = 'Liyidong'
 
-vim.g.python3_host_prog = '/usr/bin/python3'
+vim.g.python3_host_prog = '/opt/anaconda3/bin/python3'
 
 vim.g.mkdp_browser = 'chromium'
 vim.g.mkdp_browserfunc = 'open '

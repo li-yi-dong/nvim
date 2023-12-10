@@ -19,3 +19,8 @@
 - c,        c%              n,v         Change left to (, {
 - \v        v0              n           Visual to the front of the line
 - v\        v$h             n           Visual to the end of the line
+- <C-a>     <ESC>A          i           Edit at the end of the line
+- <C-b>     <ESC>A {}<ESC>i<CR><ESC>ko          i           Insert {} at the end of line and edit betweent it
+
+## Window
+- <leader>w <C-w>w          n           Go to N next window

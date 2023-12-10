@@ -27,7 +27,7 @@
   "guihua.lua": { "branch": "master", "commit": "ab8b1f09603cc268770efd057115035dc6cfa83d" },
   "hlchunk.nvim": { "branch": "main", "commit": "441f28fc3a122cd6ffd8f5a5cd32b91568780a98" },
   "joshuto.nvim": { "branch": "master", "commit": "2993aca60f56757e854b509e34fcba4f25e778ba" },
-  "lazy.nvim": { "branch": "main", "commit": "f8611632d0f9c6818e8eb54f9bcd1dad122b5a7f" },
+  "lazy.nvim": { "branch": "main", "commit": "5af331ea65418dc9361769891921fdee4bcc837a" },
   "lazygit.nvim": { "branch": "main", "commit": "3466e48439601445e26c65635421625886f2d0c0" },
   "leap.nvim": { "branch": "main", "commit": "108222ea59109e9b5e4d76930842ddc8d60d8e9e" },
   "lsp-inlayhints.nvim": { "branch": "anticonceal", "commit": "0fb3b5ef16f2d7e85963cb0b1beacf573ade35de" },
