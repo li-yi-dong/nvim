@@ -22,7 +22,6 @@ M.config = {
 					},
 				},
 			},
-			{ 'neovim/nvim-lspconfig' },
 			{
 				'williamboman/mason.nvim',
 				build = function()
@@ -30,6 +29,7 @@ M.config = {
 				end,
 			},
 			{ 'williamboman/mason-lspconfig.nvim' },
+			{ 'neovim/nvim-lspconfig' },
 			{ 'hrsh7th/cmp-nvim-lsp' },
 			{
 				'j-hui/fidget.nvim',
@@ -50,9 +50,9 @@ M.config = {
 			M.lsp = lsp
 
 			lsp.ensure_installed({
-				'tsserver',
+				--'tsserver',
 				'eslint',
-				'gopls',
+				--'gopls',
 				'jsonls',
 			})
 
