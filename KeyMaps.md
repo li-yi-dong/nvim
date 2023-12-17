@@ -3,7 +3,7 @@
 ## Basics
 - S         :w<CR>          n           Save
 - Q         :q<CR>          n           Quit
-- Y         \"+y            v
+- Y         \"+y            v           Copy to the system clip board
 - `         ~               n,v         Toggle upper case
 
 ## Movement
@@ -24,3 +24,17 @@
 
 ## Window
 - <leader>w <C-w>w          n           Go to N next window
+- T         :tabe<CR>                   Open a empty tab
+- tt        :tab split<CR>              Open a new tab with current buffer
+- t<left>   :-tabnext<CR>               Previous tab
+- t<right>  :+tabnext<CR>               Next tab
+- t<up>     :-tabmove<CR>               Move current tab left
+- t<down>   :+tabmove<CR>               Move current tab right
+- sk                                    Split up
+- sj                                    Split down
+- sh                                    Split left
+- sl                                    Split right
+- <up>                                  Enlarge window vertically
+- <down>                                Shrink window vertically
+- <left>                                Shrink window horizontally
+- <right>                               Enlarge window horizontally
