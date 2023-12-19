@@ -9,7 +9,10 @@ local function my_on_attach(bufnr)
 	api.config.mappings.default_on_attach(bufnr)
 
 	-- custom mappings
-	vim.keymap.set('n', '<C-t>', api.tree.change_root_to_parent, opts('Up'))
+	vim.keymap.set('n', '<C-p>', api.tree.change_root_to_parent, opts('Up'))
+	vim.keymap.set('n', 't', api.node.open.tab, opts('Open: New Tab'))
+	vim.keymap.set('n', '<CR>', api.node.open.no_window_picker, opts('Open: no_window_picker'))
+	vim.keymap.set('n', 'o', api.node.open.edit, opts('Open'))
 	vim.keymap.set('n', '?', api.tree.toggle_help, opts('Help'))
 end
 

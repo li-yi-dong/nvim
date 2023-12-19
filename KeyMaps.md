@@ -38,3 +38,33 @@
 - <down>                                Shrink window vertically
 - <left>                                Shrink window horizontally
 - <right>                               Enlarge window horizontally
+
+## Nvim-Tree
+- te       :NvimtreeToggle<CR>         n,v         Toggle Nvim-Tree
+### In Nvim-Tree window
+- <C-e>         Open inplace
+- t             Open new tab
+- o             Open
+- <CR>          Open no window picker
+- <TAB>         Open preview
+- <C-v>         Open vertical split
+- <C-x>         Open horizontal split
+
+- a             Add
+- d             Delete
+- r             Rename
+- c             Copy
+- x             Cut
+- p             Paste
+- y             Copy name
+- Y             Copy relative name
+- gy            Copy absolute name
+
+- <BS>          Close directory
+- J             Last sibling
+- K             First sibling
+- P             Parent directory
+- W             Collapse
+- E             Expand all
+- <C-p>         Change root directory to parent
+- S             Search
