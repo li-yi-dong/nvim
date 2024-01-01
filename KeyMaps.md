@@ -68,3 +68,6 @@
 - E             Expand all
 - <C-p>         Change root directory to parent
 - S             Search
+
+## Terminal
+- <C-\>         Toggleterminal

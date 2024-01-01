@@ -28,8 +28,8 @@ M.config = {
 			-- 	builtin.grep_string({ search = "" })
 			-- end, m)
 			vim.keymap.set('n', '<leader>rs', builtin.resume, m)
-			vim.keymap.set('n', '<c-w>', builtin.buffers, m)
-			vim.keymap.set('n', '<c-h>', builtin.oldfiles, m)
+			--vim.keymap.set('n', '<c-w>', builtin.buffers, m)
+			--vim.keymap.set('n', '<c-h>', builtin.oldfiles, m)
 			vim.keymap.set('n', '<c-_>', builtin.current_buffer_fuzzy_find, m)
 			vim.keymap.set('n', 'z=', builtin.spell_suggest, m)
 
@@ -63,7 +63,7 @@ M.config = {
 					},
 					mappings = {
 						i = {
-							["<C-h>"] = "which_key",
+							--["<C-h>"] = "which_key",
 							["<C-u>"] = "move_selection_previous",
 							["<C-e>"] = "move_selection_next",
 							["<C-l>"] = "preview_scrolling_up",

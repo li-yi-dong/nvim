@@ -29,12 +29,12 @@ return {
 			},
 			keymap = {
 				builtin = {
-					["<c-f>"]    = "toggle-fullscreen",
-					["<c-r>"]    = "toggle-preview-wrap",
-					["<c-p>"]    = "toggle-preview",
-					["<c-y>"]    = "preview-page-down",
-					["<c-l>"]    = "preview-page-up",
-					["<S-left>"] = "preview-page-reset",
+					["<c-f>"] = "toggle-fullscreen",
+					["<c-r>"] = "toggle-preview-wrap",
+					["<c-p>"] = "toggle-preview",
+					["<c-y>"] = "preview-page-down",
+					["<c-l>"] = "preview-page-up",
+					--["<S-left>"] = "preview-page-reset",
 				},
 				fzf = {
 					["esc"]        = "abort",
