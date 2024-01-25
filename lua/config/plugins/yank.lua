@@ -5,9 +5,9 @@ return {
 			"kkharji/sqlite.lua",
 		},
 		config = function()
-			vim.keymap.set("n", "<leader>y", ":Telescope yank_history<CR>")
-			-- vim.keymap.set("n", "<c-u>", "<Plug>(YankyCycleForward)")
-			-- vim.keymap.set("n", "<c-e>", "<Plug>(YankyCycleBackward)")
+			vim.keymap.set("n", "<leader> y", ":Telescope yank_history<CR>")
+			vim.keymap.set("n", "<c-n>", "<Plug>(YankyCycleForward)")
+			vim.keymap.set("n", "<c-p>", "<Plug>(YankyCycleBackward)")
 			vim.keymap.set({ "n", "x" }, "p", "<Plug>(YankyPutAfter)")
 			vim.keymap.set({ "n", "x" }, "P", "<Plug>(YankyPutBefore)")
 			vim.keymap.set({ "n", "x" }, "gp", "<Plug>(YankyGPutAfter)")

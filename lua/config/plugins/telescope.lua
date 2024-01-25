@@ -113,23 +113,23 @@ M.config = {
 			})
 
 			ts.load_extension("yank_history")
-			ts.load_extension('dap')
+			-- ts.load_extension('dap')
 			ts.load_extension('telescope-tabs')
 			ts.load_extension('fzf')
-			ts.load_extension('simulators')
+			-- ts.load_extension('simulators')
 			ts.load_extension("command_center")
 
-			require("simulators").setup({
-				android_emulator = false,
-				apple_simulator = true,
-			})
+			-- require("simulators").setup({
+			-- 	android_emulator = false,
+			-- 	apple_simulator = true,
+			-- })
 			-- ts.load_extension("ui-select")
-			ts.load_extension("flutter")
-			local tsdap = ts.extensions.dap;
-			vim.keymap.set("n", "<leader>'v", tsdap.variables, m)
-			vim.keymap.set("n", "<leader>'a", tsdap.commands, m)
-			vim.keymap.set("n", "<leader>'b", tsdap.list_breakpoints, m)
-			vim.keymap.set("n", "<leader>'f", tsdap.frames, m)
+			-- ts.load_extension("flutter")
+			-- local tsdap = ts.extensions.dap;
+			-- vim.keymap.set("n", "<leader>'v", tsdap.variables, m)
+			-- vim.keymap.set("n", "<leader>'a", tsdap.commands, m)
+			-- vim.keymap.set("n", "<leader>'b", tsdap.list_breakpoints, m)
+			-- vim.keymap.set("n", "<leader>'f", tsdap.frames, m)
 		end
 	},
 	{

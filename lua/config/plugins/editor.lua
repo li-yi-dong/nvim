@@ -22,7 +22,7 @@ return {
 					'regex',
 				},
 			})
-			vim.cmd("hi IlluminatedWordText guibg=#393E4D gui=none")
+			vim.cmd("hi IlluminatedWordText guibg=#585858 gui=italic")
 		end
 	},
 	{
@@ -63,7 +63,9 @@ return {
 			buftypes = {},
 		}
 	},
+	-- gs for replace the word with its antonyms
 	{ 'theniceboy/antovim', lazy = false, },
+	-- <Enter> to select text obj
 	{ 'gcmt/wildfire.vim',  lazy = false, },
 	{
 		"fedepujol/move.nvim",
@@ -86,15 +88,15 @@ return {
 				on_substitute = require("yanky.integration").substitute(),
 				highlight_substituted_text = {
 					enabled = true,
-					timer = 200,
+					timer = 500,
 				},
 			})
-			vim.keymap.set("n", "s", substitute.operator, { noremap = true })
-			vim.keymap.set("n", "sh", function() substitute.operator({ motion = "e" }) end, { noremap = true })
-			vim.keymap.set("x", "s", require('substitute.range').visual, { noremap = true })
-			vim.keymap.set("n", "ss", substitute.line, { noremap = true })
-			vim.keymap.set("n", "sI", substitute.eol, { noremap = true })
-			vim.keymap.set("x", "s", substitute.visual, { noremap = true })
+			vim.keymap.set("n", "r", substitute.operator, { noremap = true })
+			vim.keymap.set("n", "rh", function() substitute.operator({ motion = "e" }) end, { noremap = true })
+			vim.keymap.set("x", "r", require('substitute.range').visual, { noremap = true })
+			vim.keymap.set("n", "rs", substitute.line, { noremap = true })
+			vim.keymap.set("n", "rI", substitute.eol, { noremap = true })
+			vim.keymap.set("x", "r", substitute.visual, { noremap = true })
 		end
 	},
 	{

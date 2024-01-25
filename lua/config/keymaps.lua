@@ -25,6 +25,7 @@ local nmappings = {
 	{ from = ",",          to = "%",                                                   mode = mode_nv },
 	{ from = "\\v",        to = "v0", },
 	{ from = "v\\",        to = "v$h", },
+	{ from = "jj",         to = "<ESC>",                                               mode = mode_i },
 	{ from = "<c-a>",      to = "<ESC>A",                                              mode = mode_i },
 	{ from = "<c-b>",      to = "<ESC>A {}<ESC>i<CR><ESC>ko",                          mode = mode_i },
 
@@ -58,6 +59,11 @@ local nmappings = {
 	{ from = "t<up>",      to = ":-tabmove<CR>", },
 	{ from = "t<down>",    to = ":+tabmove<CR>", },
 
+	--Telescope
+	{ from = "fl",         to = ":Telescope live_grep<CR>" },
+	{ from = "ff",         to = ":Telescope find_files<CR>" },
+	{ from = "<leader>y",  to = ":Telescope yank_history<CR>" },
+
 	-- Other
 	-- { from = "<leader>sw",    to = ":set wrap<CR>" },
 	{ from = "<leader>nh", to = ":nohlsearch<CR>" },
@@ -74,6 +80,7 @@ local nmappings = {
 	-- nvim-tree
 	{ from = "te",         to = ":NvimTreeToggle<CR>",                                 mode = mode_nv },
 }
+
 
 for _, mapping in ipairs(nmappings) do
 	vim.keymap.set(mapping.mode or "n", mapping.from, mapping.to, { noremap = true })
