@@ -79,6 +79,8 @@ local nmappings = {
 	-- { from = "R",             to = ":Joshuto<CR>" },
 	-- nvim-tree
 	{ from = "te",         to = ":NvimTreeToggle<CR>",                                 mode = mode_nv },
+	{ from = "tf",         to = ":NvimTreeFindFile<CR>",                               mode = mode_nv },
+	{ from = "to",         to = ":NvimTreeFocus<CR>",                                  mode = mode_nv },
 }
 
 
